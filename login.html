@@ -50,6 +50,8 @@ input[type=submit]:hover {
     }
 
     function checkCookie(){
+      var co = document.cookie;
+      alert(co);
         f = document.cookie.indexOf("admin");
         if (f>0){
             alert("您已经登录");
