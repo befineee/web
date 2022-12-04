@@ -50,8 +50,8 @@ input[type=submit]:hover {
     }
 
     function checkCookie(){
-        var user = document.cookie;
-        if (user=="admin"){
+        f = document.cookie.indexOf("admin");
+        if (f){
             alert("您已经登录");
         }
     }
@@ -65,7 +65,6 @@ input[type=submit]:hover {
             var password=document.getElementById("psw").value;
             if(username=="admin" && password==123){
                     setCookie(username);
-                    location.href="index.html";
             }else{
                 alert("用户或密码输入错误");
             }
