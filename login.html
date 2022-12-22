@@ -54,10 +54,7 @@ input[type=submit]:hover {
         f = document.cookie.indexOf("admin");
         if (f>=0){
             alert("您已经登录");
-<<<<<<< HEAD
-=======
-            location.href="https://befineee.github.io/web/";
->>>>>>> 060d513deecdc1bdb5b04269d08a5f2737accfa2
+            location.href="index.html";
         }
     }
     </script>
@@ -70,6 +67,9 @@ input[type=submit]:hover {
             var password=document.getElementById("psw").value;
             if(username=="admin" && password==123){
                     setCookie(username);
+                    alert("登录成功！");
+                    location.href="index.html";
+
             }else{
                 alert("用户或密码输入错误");
             }
