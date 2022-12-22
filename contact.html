@@ -3,7 +3,11 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+
 <style>
+
 body {font-family: Arial, Helvetica, sans-serif;}
 * {box-sizing: border-box;}
 
@@ -18,14 +22,15 @@ input[type=text], select, textarea {
   resize: vertical;
 }
 
-input[type=submit] {
-  background-color: #4CAF50;
+button{
+    background-color: #4CAF50;
   color: white;
   padding: 12px 20px;
   border: none;
   border-radius: 4px;
   cursor: pointer;
 }
+
 
 input[type=submit]:hover {
   background-color: #45a049;
@@ -47,7 +52,7 @@ input[type=submit]:hover {
 <h3 align="center">Contact Form</h3>
 
 <div class="container">
-  <form action="/action_page.php">
+  <form>
     <label for="name">Your Name</label>
     <input type="text" id="name" name="name" placeholder="Your name..">
 
@@ -67,10 +72,16 @@ input[type=submit]:hover {
     <label for="Your message">Subject</label>
     <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
 
-    <input type="submit" value="Submit">
+    <button id="myButton">提交</button>
+
   </form>
 </div>
 
+    <script>
+     document.getElementById("myButton").addEventListener("click", function() {
+    alert("提交成功！");
+  });
+</script>
 </body>
 </html>
 

@@ -1,3 +1,5 @@
+
+body {font-family: Arial, Helvetica, sans-serif;}
 .container {
     position: absolute;
     margin: 20px;
@@ -41,3 +43,16 @@
     clear: both;
     display: table;
   }
+
+  .bg-img {
+    /* The image used */
+    background-image: url("../pictures/background.jpg");
+  
+    min-height:540px;
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100% 200%;
+    /* Needed to position the navbar */
+    position: relative;
+  } 
